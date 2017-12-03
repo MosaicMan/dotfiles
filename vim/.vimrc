@@ -1,7 +1,7 @@
 " Vundle
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-
+set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'xolox/vim-colorscheme-switcher'
