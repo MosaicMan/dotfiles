@@ -12,7 +12,7 @@ set t_Co=256
 let g:colors_name = "earthy"
 
 hi SpecialKey term=bold ctermfg=8 ctermbg=236 guifg=#808080 guibg=#343434 guisp=#343434
-hi NonText term=bold ctermfg=8 guifg=#808080 guibg=#303030 guisp=#303030
+hi NonText term=bold ctermfg=8 guifg=#cfcfcf guibg=#141414 guisp=#141414
 hi Directory term=bold ctermfg=159 guifg=Cyan
 hi ErrorMsg term=standout ctermfg=15 ctermbg=1 guifg=White guibg=Red
 hi IncSearch term=reverse cterm=reverse gui=reverse
@@ -50,15 +50,15 @@ hi TabLine term=underline ctermbg=7 gui=italic guifg=#000000 guibg=#b0b8c0 guisp
 hi TabLineSel term=bold cterm=bold ctermbg=255 gui=bold,italic guifg=#000000 guibg=#f0f0f0 guisp=#f0f0f0
 hi TabLineFill term=reverse ctermfg=247 guifg=#9098a0
 hi CursorColumn term=reverse ctermbg=235 guibg=#182028 guisp=#182028
-hi CursorLine term=underline ctermfg=172 ctermbg=18 guibg=#182028 guisp=#182028
+hi CursorLine cterm=NONE term=NONE ctermfg=172 ctermbg=NONE
 hi ColorColumn term=reverse ctermbg=1 guibg=DarkRed
 hi MatchParen term=reverse cterm=bold ctermfg=15 ctermbg=108 gui=bold guifg=#ffffff guibg=#80a090 guisp=#80a090
 hi Comment ctermfg=8
 hi Constant term=underline ctermfg=9 guifg=Magenta
-hi Special term=bold ctermfg=5 guifg=SlateBlue
+hi Special term=bold ctermfg=51 guifg=SlateBlue
 hi Identifier term=underline ctermfg=6 guifg=DarkCyan
 hi Statement term=bold ctermfg=179 gui=bold guifg=Brown
-hi PreProc term=underline ctermfg=5 guifg=Purple
+hi PreProc term=underline ctermfg=51 guifg=Purple
 hi Type term=underline ctermfg=2 gui=bold guifg=SeaGreen
 hi Underlined term=underline cterm=underline ctermfg=5 gui=underline guifg=SlateBlue
 hi Ignore ctermfg=15 guifg=bg
