@@ -17,24 +17,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'w0rp/ale'
-"Plug 'pangloss/vim-javascript'
-""Plug 'mxw/vim-jsx'
-""Plug 'mattn/emmet-vim'
-"Plug 'bronson/vim-trailing-whitespace'
-
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
-
+Plug 'luochen1990/rainbow'
 Plug 'davidhalter/jedi-vim'
-"Plug 'Shougo/deoplete.nvim'
-"Plug 'zchee/deoplete-jedi'
-"Plug 'vim-syntastic/syntastic'
 Plug 'Valloric/YouCompleteMe'
+Plug 'matze/vim-move'
 call plug#end()
 
 set nocompatible	" Vi Improved
@@ -89,11 +75,13 @@ nnoremap tk :tabfirst<CR>
 
 colorscheme earthy
 
+" Rainbow Parentheses
+let g:rainbow_active = 1
+
 " ALE
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 "let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
-
 
 " NERDTree
 let NERDTreeMinimalUI = 1
@@ -109,7 +97,6 @@ let g:airline_theme='minimalist'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#enable_branch = 1
-"let g:airline#enable_syntastic = 1
 let g:airline_powerline_fonts = 1
 
 " YouCompleteMe
@@ -119,21 +106,10 @@ let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language
 let g:ycm_complete_in_comments = 1 " Completion in comments
 let g:ycm_complete_in_strings = 1 " Completion in string
 
-"" Deoplete
-"let g:deoplete#enable_at_startup = 1
-"let g:deoplete#enable_refresh_always = 1
-"let g:deoplete#max_processes = 4
-"
 "" Jedi
 let g:jedi#show_call_signatures = 2
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#show_call_signatures_delay = 0
-
-" Syntastic
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
 
 " CtrlP
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
