@@ -29,11 +29,11 @@ Plug 'w0rp/ale'
 "  Plug 'roxma/vim-hug-neovim-rpc'
 "endif
 
-"Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 "Plug 'Shougo/deoplete.nvim'
 "Plug 'zchee/deoplete-jedi'
 "Plug 'vim-syntastic/syntastic'
-"Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 set nocompatible	" Vi Improved

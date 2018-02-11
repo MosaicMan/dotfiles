@@ -189,7 +189,7 @@ prompt_hg() {
         # if working copy is clean
         prompt_segment "$AGNOSTER_HG_CLEAN_BG" "$AGNOSTER_HG_CLEAN_FG"
       fi
-      echo -n $(hg prompt "☿ {rev}@{branch}") $st
+      echo -n $(hg prompt " {rev}@{branch}") $st
     else
       st=""
       rev=$(hg id -n 2>/dev/null | sed 's/[^-0-9]//g')
@@ -203,7 +203,7 @@ prompt_hg() {
       else
         prompt_segment "$AGNOSTER_HG_CLEAN_BG" "$AGNOSTER_HG_CLEAN_FG"
       fi
-      echo -n "☿ $rev@$branch" $st
+      echo -n " $rev@$branch" $st
     fi
   fi
 }

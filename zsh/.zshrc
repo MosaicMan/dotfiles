@@ -9,11 +9,12 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="minimalist-agnoster-airline"
+#ZSH_THEME="random"
 
 # Agnoster variables
 # Current working directory
-: ${AGNOSTER_DIR_FG:=234}
-: ${AGNOSTER_DIR_BG:=240}
+: ${AGNOSTER_DIR_FG:=233}
+: ${AGNOSTER_DIR_BG:=237}
 
 # user@host
 : ${AGNOSTER_CONTEXT_FG:=default}
@@ -102,6 +103,7 @@ ZSH_THEME="minimalist-agnoster-airline"
 plugins=(
   git,
   mercurial,
+  tmux,
   django,
   npm,
   virtualenvwrapper
