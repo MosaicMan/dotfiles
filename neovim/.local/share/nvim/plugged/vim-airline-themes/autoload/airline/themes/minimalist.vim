@@ -7,18 +7,18 @@
 
 " Normal Mode
 let s:N1 = [ '#E4E4E4' , '#3A3A3A' , 254 , 237 ]
-let s:N2 = [ '#E4E4E4' , '#4E4E4E' , 254 , 239 ]
-let s:N3 = [ '#EEEEEE' , '#262626' , 255 , 235 ]
+let s:N2 = [ '#E4E4E4' , '#4E4E4E' , 242 , 235 ]
+let s:N3 = [ '#EEEEEE' , '#262626' , 237 , 234 ]
 
 " Insert Mode
 let s:I1 = [ '#E4E4E4' , '#3A3A3A' , 254 , 237 ]
-let s:I2 = [ '#E4E4E4' , '#4E4E4E' , 254 , 239 ]
-let s:I3 = [ '#EEEEEE' , '#262626' , 255 , 235 ]
+let s:I2 = [ '#E4E4E4' , '#4E4E4E' , 242 , 235 ]
+let s:I3 = [ '#EEEEEE' , '#262626' , 237 , 234 ]
 
 " Visual Mode
 let s:V1 = [ '#E4E4E4' , '#3A3A3A' , 254 , 237 ]
-let s:V2 = [ '#E4E4E4' , '#4E4E4E' , 254 , 239 ]
-let s:V3 = [ '#EEEEEE' , '#262626' , 255 , 235 ]
+let s:V2 = [ '#E4E4E4' , '#4E4E4E' , 242 , 235 ]
+let s:V3 = [ '#EEEEEE' , '#262626' , 237 , 234 ]
 
 " Replace Mode
 let s:R1 = [ '#E4E4E4' , '#3A3A3A' , 254 , 237 ]
