@@ -15,6 +15,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'edkolev/promptline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
 Plug 'w0rp/ale'
 "Plug 'pangloss/vim-javascript'
 ""Plug 'mxw/vim-jsx'
@@ -134,4 +135,13 @@ let g:jedi#show_call_signatures_delay = 0
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
+" CtrlP
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }

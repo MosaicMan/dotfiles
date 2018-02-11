@@ -164,3 +164,5 @@ alias vim='nvim'
 # mkdir subtree
 alias mkdir='mkdir -p'
 
+alias cls='clear'
+
