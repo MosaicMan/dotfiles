@@ -1,11 +1,11 @@
 " Plug
 filetype on
 
-" auto-install vim-plug                                                                                                                
-if empty(glob('~/.config/nvim/autoload/plug.vim'))                                                                                    
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim                                                             
-  autocmd VimEnter * PlugInstall                                                                                                      
-endif                                                                                                                                 
+" auto-install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-surround'
@@ -15,12 +15,21 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'edkolev/promptline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
+"Plug 'kien/ctrlp.vim'
 Plug 'w0rp/ale'
 Plug 'luochen1990/rainbow'
 Plug 'davidhalter/jedi-vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'matze/vim-move'
+"Plug 'vim-python/python-syntax'
+"Plug 'kh3phr3n/python-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+"Plug 'chrisbra/Colorizer'
+"Plug 'mhinz/vim-signify'
+"Plug 'xolox/vim-colorscheme-switcher'
+"Plug 'xolox/vim-misc'
+"Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 set nocompatible	" Vi Improved
@@ -73,7 +82,7 @@ nnoremap tl :tabnext<CR>
 nnoremap tj :tablast<CR>
 nnoremap tk :tabfirst<CR>
 
-colorscheme earthy
+colorscheme qlio
 
 " Rainbow Parentheses
 let g:rainbow_active = 1
@@ -111,13 +120,18 @@ let g:jedi#show_call_signatures = 2
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#show_call_signatures_delay = 0
 
-" CtrlP
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
+" Vim-JSX
+let g:jsx_ext_required = 0
+
+" Python-Syntax
+let g:python_highlight_all = 1
+
