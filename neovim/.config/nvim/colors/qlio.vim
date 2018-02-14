@@ -20,7 +20,7 @@ let g:colors_name="qlio"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi Normal          ctermfg=none    ctermbg=none    cterm=none
+hi Normal          ctermfg=247     ctermbg=none    cterm=none
 hi Cursor          ctermfg=none    ctermbg=none    cterm=none
 hi CursorLine      ctermfg=none    ctermbg=none    cterm=none
 hi LineNr          ctermfg=238     ctermbg=none    cterm=none
@@ -88,7 +88,7 @@ hi Number          ctermfg=009     ctermbg=none    cterm=none
 hi Boolean         ctermfg=001     ctermbg=none    cterm=none
 hi Float           ctermfg=009     ctermbg=none    cterm=none
 hi Identifier      ctermfg=006     ctermbg=none    cterm=none
-hi Function        ctermfg=058     ctermbg=none    cterm=none
+hi Function        ctermfg=095     ctermbg=none    cterm=none
 
 " --------------------------------
 " Language constructs
@@ -119,7 +119,7 @@ hi Macro           ctermfg=179     ctermbg=none    cterm=none
 hi PreCondit       ctermfg=179     ctermbg=none    cterm=none
 
 hi Type            ctermfg=002     ctermbg=none    cterm=none
-"hi StorageClass    ctermfg=none    ctermbg=none    cterm=none
+hi StorageClass    ctermfg=179    ctermbg=none    cterm=none
 hi Structure       ctermfg=247     ctermbg=none    cterm=none
 "hi Typedef         ctermfg=none    ctermbg=none    cterm=none
 
@@ -148,5 +148,21 @@ hi SpellLocal      ctermfg=none    ctermbg=014     cterm=none
 hi SpellRare       ctermfg=none    ctermbg=013     cterm=none
 
 "--------------------------------------------------------------------
-" Specific settings                                                 |
+" JS/JSX 
 "--------------------------------------------------------------------
+"hi jsImport links to Include
+"hi jsString links to String
+hi jsModuleKeyword    ctermfg=067    ctermbg=none    cterm=none
+hi jsClassKeyword     ctermfg=222    ctermbg=none    cterm=none
+hi jsExtendsKeyword   ctermfg=222    ctermbg=none    cterm=none
+hi jsClassFuncName    ctermfg=179    ctermbg=none    cterm=none
+hi jsFuncArgs         ctermfg=067    ctermbg=none    cterm=none
+hi jsSuper            ctermfg=067    ctermbg=none    cterm=none
+hi jsThis             ctermfg=067    ctermbg=none    cterm=none
+hi jsObjectProp       ctermfg=none   ctermbg=none    cterm=none
+hi jsBlockLabel       ctermfg=065    ctermbg=none    cterm=none
+hi xmlAttrib          ctermfg=095    ctermbg=none    cterm=none
+hi xmlTag             ctermfg=095    ctermbg=none    cterm=none
+hi xmlTagName         ctermfg=095    ctermbg=none    cterm=none
+hi xmlEndTag          ctermfg=095    ctermbg=none    cterm=none
+hi jsArrowFunction    ctermfg=067    ctermbg=none    cterm=none
