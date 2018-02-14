@@ -94,10 +94,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi PmenuSel ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi PmenuThumb ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi jsImport ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
-    hi jsModuleKeyword ctermbg=NONE ctermfg=94 cterm=NONE guibg=NONE guifg=#875f00 gui=NONE
+    hi jsModuleKeyword ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#5f87af gui=NONE
     hi jsFrom ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
-    hi jsModuleBraces ctermbg=NONE ctermfg=94 cterm=NONE guibg=NONE guifg=#875f00 gui=NONE
-    hi jsModuleAsterisk ctermbg=NONE ctermfg=94 cterm=NONE guibg=NONE guifg=#875f00 gui=NONE
+    hi jsModuleBraces ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#5f87af gui=NONE
+    hi jsModuleAsterisk ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#5f87af gui=NONE
     hi jsModuleAs ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
     hi jsString ctermbg=NONE ctermfg=101 cterm=NONE guibg=NONE guifg=#87875f gui=NONE
     hi jsClassKeyword ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
@@ -106,15 +106,19 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi jsExtendsKeyword ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
     hi jsClassFuncName ctermbg=NONE ctermfg=94 cterm=NONE guibg=NONE guifg=#875f00 gui=NONE
     hi jsFuncArgs ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#5f87af gui=NONE
+    hi jsFunction ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
+    hi jsFuncName ctermbg=NONE ctermfg=94 cterm=NONE guibg=NONE guifg=#875f00 gui=NONE
     hi jsSuper ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#5f87af gui=NONE
-    hi jsThis ctermbg=NONE ctermfg=247 cterm=NONE guibg=NONE guifg=#9e9e9e gui=NONE
+    hi jsThis ctermbg=NONE ctermfg=59 cterm=NONE guibg=NONE guifg=#5f5f5f gui=NONE
     hi jsStorageClass ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
     hi jsConditional ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
     hi jsReturn ctermbg=NONE ctermfg=130 cterm=NONE guibg=NONE guifg=#af5f00 gui=NONE
     hi jsObjectProp ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#bcbcbc gui=NONE
-    hi jsBlockLabel ctermbg=NONE ctermfg=94 cterm=NONE guibg=NONE guifg=#875f00 gui=NONE
+    hi jsBlockLabel ctermbg=NONE ctermfg=59 cterm=NONE guibg=NONE guifg=#5f5f5f gui=NONE
     hi jsExport ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
     hi jsExportDefault ctermbg=NONE ctermfg=130 cterm=NONE guibg=NONE guifg=#af5f00 gui=NONE
+    hi jsBooleanFalse ctermbg=NONE ctermfg=130 cterm=NONE guibg=NONE guifg=#af5f00 gui=NONE
+    hi jsBooleanTrue ctermbg=NONE ctermfg=130 cterm=NONE guibg=NONE guifg=#af5f00 gui=NONE
     hi xmlAttrib ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#5f87af gui=NONE
     hi xmlTag ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
     hi xmlTagName ctermbg=NONE ctermfg=137 cterm=NONE guibg=NONE guifg=#af875f gui=NONE
@@ -205,10 +209,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi PmenuSel ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi PmenuThumb ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi jsImport ctermbg=NONE ctermfg=red cterm=NONE
-    hi jsModuleKeyword ctermbg=NONE ctermfg=darkred cterm=NONE
+    hi jsModuleKeyword ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi jsFrom ctermbg=NONE ctermfg=red cterm=NONE
-    hi jsModuleBraces ctermbg=NONE ctermfg=darkred cterm=NONE
-    hi jsModuleAsterisk ctermbg=NONE ctermfg=darkred cterm=NONE
+    hi jsModuleBraces ctermbg=NONE ctermfg=darkcyan cterm=NONE
+    hi jsModuleAsterisk ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi jsModuleAs ctermbg=NONE ctermfg=red cterm=NONE
     hi jsString ctermbg=NONE ctermfg=darkyellow cterm=NONE
     hi jsClassKeyword ctermbg=NONE ctermfg=red cterm=NONE
@@ -217,15 +221,19 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi jsExtendsKeyword ctermbg=NONE ctermfg=red cterm=NONE
     hi jsClassFuncName ctermbg=NONE ctermfg=darkred cterm=NONE
     hi jsFuncArgs ctermbg=NONE ctermfg=darkcyan cterm=NONE
+    hi jsFunction ctermbg=NONE ctermfg=red cterm=NONE
+    hi jsFuncName ctermbg=NONE ctermfg=darkred cterm=NONE
     hi jsSuper ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi jsThis ctermbg=NONE ctermfg=gray cterm=NONE
     hi jsStorageClass ctermbg=NONE ctermfg=red cterm=NONE
     hi jsConditional ctermbg=NONE ctermfg=red cterm=NONE
     hi jsReturn ctermbg=NONE ctermfg=darkred cterm=NONE
     hi jsObjectProp ctermbg=NONE ctermfg=white cterm=NONE
-    hi jsBlockLabel ctermbg=NONE ctermfg=darkred cterm=NONE
+    hi jsBlockLabel ctermbg=NONE ctermfg=gray cterm=NONE
     hi jsExport ctermbg=NONE ctermfg=red cterm=NONE
     hi jsExportDefault ctermbg=NONE ctermfg=darkred cterm=NONE
+    hi jsBooleanFalse ctermbg=NONE ctermfg=darkred cterm=NONE
+    hi jsBooleanTrue ctermbg=NONE ctermfg=darkred cterm=NONE
     hi xmlAttrib ctermbg=NONE ctermfg=darkcyan cterm=NONE
     hi xmlTag ctermbg=NONE ctermfg=red cterm=NONE
     hi xmlTagName ctermbg=NONE ctermfg=red cterm=NONE
