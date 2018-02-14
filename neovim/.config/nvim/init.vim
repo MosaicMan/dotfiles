@@ -15,7 +15,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'edkolev/promptline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
-"Plug 'kien/ctrlp.vim'
+Plug 'python-mode/python-mode'
 Plug 'w0rp/ale'
 Plug 'luochen1990/rainbow'
 Plug 'davidhalter/jedi-vim'
@@ -25,7 +25,7 @@ Plug 'matze/vim-move'
 "Plug 'kh3phr3n/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-"Plug 'chrisbra/Colorizer'
+Plug 'chrisbra/Colorizer'
 "Plug 'mhinz/vim-signify'
 "Plug 'xolox/vim-colorscheme-switcher'
 "Plug 'xolox/vim-misc'
@@ -132,6 +132,9 @@ endfunc
 " Vim-JSX
 let g:jsx_ext_required = 0
 
-" Python-Syntax
-let g:python_highlight_all = 1
+" Python-Mode
+let g:pymode_options = 0
+let g:pymode_options_max_line_length = 120
+let g:pymode_options_colorcolumn = 0
+let g:pymode_folding = 0
 
