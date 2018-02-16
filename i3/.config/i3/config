@@ -118,16 +118,16 @@ bindsym $mod+a focus parent
   #exec --no-startup-id dropbox
   #exec_always --no-startup-id feh --bg-scale ~/.wallpaper.png
 
-set $workspace1 "1: Firefox "
-set $workspace2 "2: Terminal "
-set $workspace3 "3: "
-set $workspace4 "4: "
-set $workspace5 "5: "
-set $workspace6 "6: "
-set $workspace7 "7: "
-set $workspace8 "8: "
-set $workspace9 "9: "
-set $workspace10 "10: "
+set $workspace1 "1: Development "
+set $workspace2 "2: Chrome "
+set $workspace3 "3: Workspace 3 "
+set $workspace4 "4: Firefox "
+set $workspace5 "5: Workspace 5 "
+set $workspace6 "6: Workspace 6 "
+set $workspace7 "7: Workspace 7 "
+set $workspace8 "8: Workspace 8 "
+set $workspace9 "9: Workspace 9 "
+set $workspace10 "10: Workspace 10 "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -154,7 +154,6 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 
-assign [class="Firefox"] $workspace1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -230,3 +229,9 @@ exec_always feh --bg-scale ~/.wallpapers/Elarun-Ice-Left.png ~/.wallpapers/Elaru
 #exec_always xrandr --output Virtual1 --mode 1360x768
 
 exec_always compton -f
+
+# Assign applications to specific workspaces. Get class from xprop output (2nd string of WM_CLASS(STRING) line)
+assign [class="Code"] $workspace1
+assign [class="Gnome-terminal"] $workspace1
+assign [class="Google-chrome"] $workspace2
+assign [class="Firefox"] $workspace4

@@ -13,6 +13,7 @@ sudo apt-get install -y \
 	python-virtualenv \
 	python3-virtualenv \
 	virtualenvwrapper \
+	software-properties-gtk \
 	nodejs \
 	lightdm \
 	unity-greeter \
