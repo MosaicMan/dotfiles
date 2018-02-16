@@ -1,6 +1,11 @@
 #!/bin/bash
+sudo apt install python-software-properties curl build-essential dkms -y
 sudo add-apt-repository ppa:neovim-ppa/stable -y
-sudo apt-get install -y \
+sudo add-apt-repository ppa:numix/ppa -y
+sudo add-apt-repository ppa:noobslab/themes -y
+sudo add-apt-repository ppa:noobslab/icons -y
+sudo apt update
+sudo apt-get install \
 	stow \
 	neovim \
 	tmux \
@@ -23,9 +28,21 @@ sudo apt-get install -y \
 	mesa-utils-extra \
 	compton \
 	xorg \
-	xserver-org \
+	xserver-xorg \
 	thunar \
 	gnome-terminal \
 	lxappearance \
 	feh \
+	arc-theme \
+	arc-icons \
+	numix-icon-theme \
+	numix-folders \
+	numix-icon-theme-circle \
+	numix-icon-theme-square \
+	firefox \
+	-y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/FortAwesome/Font-Awesome
+git clone https://github.com/ryanoasis/nerd-fonts
+mkdir ~/.fonts
+

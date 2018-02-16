@@ -100,4 +100,5 @@ ENV/
 # mypy
 .mypy_cache/
 
-neovim/.local/share/nvim
+neovim/.local/share/
+
