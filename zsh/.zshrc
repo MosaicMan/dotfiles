@@ -191,3 +191,8 @@ bindkey -s "^[Oo" "/"
 
 # Vi mode
 bindkey -v
+
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
