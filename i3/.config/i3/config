@@ -224,7 +224,7 @@ bar {
 
 
 # Set wallpaper (need to install feh)
-#exec_always feh --bg-scale /path_to_image_file
+exec_always feh --bg-scale ~/.wallpapers/Elarun-Ice-Left.png ~/.wallpapers/Elarun-Ice-Right.png
 
 # Set display mode
 #exec_always xrandr --output Virtual1 --mode 1360x768
