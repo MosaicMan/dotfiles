@@ -113,21 +113,28 @@ bindsym $mod+a focus parent
 
 
 # Startup Programs
-  exec --no-startup-id nm-applet
+  #exec --no-startup-id nm-applet
   #exec --no-startup-id dunst
   #exec --no-startup-id dropbox
   #exec_always --no-startup-id feh --bg-scale ~/.wallpaper.png
 
 set $workspace1 "1: Development "
 set $workspace2 "2: Chrome "
-set $workspace3 "3: Workspace 3 "
-set $workspace4 "4: Firefox "
+set $workspace3 "3: Firefox "
+set $workspace4 "4: Workspace 4 "
 set $workspace5 "5: Workspace 5 "
 set $workspace6 "6: Workspace 6 "
 set $workspace7 "7: Workspace 7 "
 set $workspace8 "8: Workspace 8 "
 set $workspace9 "9: Workspace 9 "
 set $workspace10 "10: Workspace 10 "
+
+# Automatically putting workspaces on specific screens:
+#  xrandr --current
+workspace $workspace1 output VGA-1
+workspace $workspace2 output VGA-2
+workspace $workspace3 output VGA-2
+
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -234,4 +241,4 @@ exec_always compton -f
 assign [class="Code"] $workspace1
 assign [class="Gnome-terminal"] $workspace1
 assign [class="Google-chrome"] $workspace2
-assign [class="Firefox"] $workspace4
+assign [class="Firefox"] $workspace3
