@@ -24,6 +24,7 @@ sudo apt-get install \
 	unity-greeter \
 	i3 \
 	i3blocks \
+	rofi \
 	mesa-utils \
 	mesa-utils-extra \
 	compton \
