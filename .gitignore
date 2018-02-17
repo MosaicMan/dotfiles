@@ -102,4 +102,4 @@ ENV/
 
 neovim/.local/share/
 neovim/.local/bin/
-
+vscode/.config/Code

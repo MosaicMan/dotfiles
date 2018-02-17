@@ -1,12 +1,12 @@
 #!/bin/bash
 
+# Install Base Packages
+sudo apt install software-properties-common python-software-properties curl build-essential dkms gnupg zip unzip -y
+
 # Install Nerd Font
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Hack.zip
 unzip Hack.zip -d ~/.local/share/fonts/Hack
 rm -f Hack.zip
-
-# Install Base Packages
-sudo apt install software-properties-common python-software-properties curl build-essential dkms gnupg -y
 
 # Add VS Code Repository
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -61,7 +61,7 @@ sudo apt-get install \
 	gnome-terminal \
 	lxappearance \
 	feh \
-	file-roller zip unzip \
+	file-roller \
 	seahorse seahorse-daemon \
 	keepass2 \
 	mono-xbuild cmake \
@@ -71,10 +71,10 @@ sudo apt-get install \
 	numix-folders \
 	numix-icon-theme-circle \
 	numix-icon-theme-square \
-	firefox \
+	firefox google-chrome-stable \
 	breeze-cursor-theme chameleon-cursor-theme dmz-cursor-theme oxygen-cursor-theme oxygen-cursor-theme-extra xcursor-themes \
 	fonts-font-awesome fonts-ubuntu-font-family-console ttf-ubuntu-font-family edubuntu-fonts \
-	gedit gedit-plugins code \
+	gedit gedit-plugins code sublime-text \
 	-y
 
 # Install OhMyZSH
@@ -82,4 +82,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Turn off git pager
 sh -c "git config --global --replace-all core.pager cat"
+
+# Pull Git submodules
+sh -c "git submodule update --recursive --init vscode"
+
 
