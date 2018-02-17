@@ -40,9 +40,11 @@ sudo apt-get install \
 	numix-icon-theme-circle \
 	numix-icon-theme-square \
 	firefox \
+	breeze-cursor-theme chameleon-cursor-theme dmz-cursor-theme oxygen-cursor-theme oxygen-cursor-theme-extra xcursor-themes \
+	fonts-ubuntu-font-family-console ttf-ubuntu-font-family edubuntu-fonts \
 	-y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/FortAwesome/Font-Awesome
 git clone https://github.com/ryanoasis/nerd-fonts
 mkdir ~/.fonts
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
