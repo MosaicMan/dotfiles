@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install python-software-properties curl build-essential dkms -y
+sudo apt install software-properties-common python-software-properties curl build-essential dkms -y
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo add-apt-repository ppa:numix/ppa -y
 sudo add-apt-repository ppa:noobslab/themes -y
