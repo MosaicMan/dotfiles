@@ -1,0 +1,6 @@
+[submodule "vscode/.vscode/extensions/VSCode-GrayBlueTheme"]
+	path = vscode/.vscode/extensions/VSCode-GrayBlueTheme
+	url = https://github.com/MosaicMan/VSCode-GrayBlueTheme
+[submodule "vscode/.vscode/extensions/VSCode-BreezeDarkTheme"]
+	path = vscode/.vscode/extensions/VSCode-BreezeDarkTheme
+	url = https://github.com/MosaicMan/VSCode-BreezeDarkTheme
