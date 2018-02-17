@@ -86,4 +86,17 @@ sh -c "git config --global --replace-all core.pager cat"
 # Pull Git submodules
 sh -c "git submodule update --recursive --init vscode"
 
+sudo cp 10_unity_greeter_background.gschema.override /usr/share/glib-2.0/schemas/.
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+
+rm ~/.zshrc
+nvim -c "PlugInstall" -c "quitall"
+/.local/share/nvim/plugged/YouCompleteMe/install.py --all
+
+stow zsh
+stow neovim
+stow tmux
+stow i3
+stow vscode
+stow wallpapers
 

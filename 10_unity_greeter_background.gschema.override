@@ -1,0 +1,5 @@
+[com.canonical.unity-greeter]
+draw-user-backgrounds=false
+background='/usr/share/backgrounds/ubuntustudio/ubuntustudio_1404.jpg'
+background-color='#252936'
+draw-grid=false
