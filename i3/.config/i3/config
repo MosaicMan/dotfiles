@@ -119,16 +119,16 @@ bindsym $mod+a focus parent
   #exec --no-startup-id dropbox
   #exec_always --no-startup-id feh --bg-scale ~/.wallpaper.png
 
-set $workspace1 "1: Development "
+set $workspace1 "1: Development "
 set $workspace2 "2: Chrome "
 set $workspace3 "3: Firefox "
-set $workspace4 "4: Workspace 4 "
-set $workspace5 "5: Workspace 5 "
+set $workspace4 "4: Workspace 4 "
+set $workspace5 "5: Workspace 5 "
 set $workspace6 "6: Workspace 6 "
-set $workspace7 "7: Workspace 7 "
-set $workspace8 "8: Workspace 8 "
-set $workspace9 "9: Workspace 9 "
-set $workspace10 "10: Workspace 10 "
+set $workspace7 "7: Workspace 7 "
+set $workspace8 "8: Workspace 8 "
+set $workspace9 "9: Workspace 9 "
+set $workspace10 "10: Workspace 10 "
 
 # Automatically putting workspaces on specific screens:
 #  xrandr --current
