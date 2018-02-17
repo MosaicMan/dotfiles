@@ -5,6 +5,7 @@ sudo apt install software-properties-common python-software-properties curl buil
 
 # Install Nerd Font
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.2.0/Hack.zip
+mkdir ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts/Hack
 rm -f Hack.zip
 
@@ -90,7 +91,9 @@ sudo cp 10_unity_greeter_background.gschema.override /usr/share/glib-2.0/schemas
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas
 
 rm ~/.zshrc
-nvim -c "PlugInstall" -c "quitall"
+nvim -c "quit"
+nvim -c "PlugClean!" -c "quitall!"
+nvim -c "PlugInstall" -c "quitall!"
 /.local/share/nvim/plugged/YouCompleteMe/install.py --all
 
 stow zsh

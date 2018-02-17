@@ -7,5 +7,7 @@
         "**/.DS_Store": true
     },
     "workbench.colorTheme": "MosaicMan GrayBlue",
-    "workbench.iconTheme": "ayu"
+    "workbench.iconTheme": "ayu",
+    "window.menuBarVisibility": "toggle",
+    "workbench.startupEditor": "newUntitledFile"
 }
