@@ -9,6 +9,9 @@ mkdir ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts/Hack
 rm -f Hack.zip
 
+# Add Node.js Repository
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
 # Add VS Code Repository
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
