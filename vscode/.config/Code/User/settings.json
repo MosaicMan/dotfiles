@@ -4,10 +4,19 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/*.sublime-project": true
     },
     "workbench.colorTheme": "MosaicMan GrayBlue",
     "workbench.iconTheme": "ayu",
     "window.menuBarVisibility": "toggle",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "python.venvPath": "~/.venvs",
+    "window.zoomLevel": 1,
+    "hg.autoInOut": false,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true
 }
