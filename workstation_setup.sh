@@ -58,7 +58,7 @@ sudo apt-get install \
 	rofi \
 	mesa-utils \
 	mesa-utils-extra \
-	compton \
+	compton compton-conf \
 	xorg \
 	xserver-xorg \
 	thunar \
@@ -79,6 +79,7 @@ sudo apt-get install \
 	breeze-cursor-theme chameleon-cursor-theme dmz-cursor-theme oxygen-cursor-theme oxygen-cursor-theme-extra xcursor-themes \
 	fonts-font-awesome fonts-ubuntu-font-family-console ttf-ubuntu-font-family edubuntu-fonts \
 	gedit gedit-plugins code sublime-text \
+	libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake \
 	-y
 
 # Install OhMyZSH
@@ -105,4 +106,18 @@ stow tmux
 stow i3
 stow vscode
 stow wallpapers
+
+# Begin i3-gaps install
+mkdir -p ~/.systemrepos
+cd ~/.systemrepos
+git clone https://www.github.com/Airblader/i3 i3-gaps
+cd i3-gaps
+autoreconf --force --install
+rm -rf build/
+mkdir -p build && cd build/
+
+../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+make
+sudo make install
+# End i3-gaps install
 
